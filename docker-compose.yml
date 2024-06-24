@@ -9,6 +9,11 @@ services:
     depends_on:
       - db
 
+  vulnerable:
+    image: vulnerables/cve-2016-10033
+    ports:
+      - "8084:80"
+
   db:
     image: mysql:5.7
     restart: always
