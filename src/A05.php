@@ -29,7 +29,7 @@
             <ul>
                 <li>Mauvaise configuration des parsers XML : Possibilité de XXE / XEE, exemple : <a href="xxe_vulnerable.php">XML Parser</a></li>
                 <li>Mots de passe par défaut</li>
-                <li>La fonctionnalité de listage des répertoires n'est pas désactivée sur le serveur.</li>
+                <li>La fonctionnalité de listage des répertoires n'est pas désactivée sur le serveur. Exemple Google Dorking : <b>intitle:index of</b></li>
                 <li>Le serveur d'application est livré avec des applications classiques qui ne sont pas supprimées du serveur mis en production. Ces mêmes applications ont des failles de sécurité connues que les attaquants utilisent afin de compromettre le serveur. Si l'une de ces applications est la console d'administration, et que les comptes par défaut n'ont pas été modifiés, l'attaquant se connecte avec les mots de passe par défaut et prend la main sur la cible.</li>
                 <li>Cookie de session sans les flags HttpOnly et Secure</li>
                 <li>Pas d'entêtes de sécurité sur l'application</li>

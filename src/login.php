@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Exemple A07 - Connexion</title>
+    <title>Exemple A07 - SAP Connexion</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-        <h1>Exemple A07 - Connexion</h1>
+        <h1>Exemple A07 - SAP Connexion</h1>
     </header>
     <nav>
         <a href="index.php">Accueil</a>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="form-group">
                     <label for="password">Mot de passe :</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="text" id="password" name="password" required>
                 </div>
                 <button type="submit" name="login">Se connecter</button>
             </form>

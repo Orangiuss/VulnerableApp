@@ -34,13 +34,13 @@ include 'db.php';
             return md5($password); // Utilisation de md5, qui est une méthode de hachage faible
         }
         ?>
-<p>Base64 : YWRtaW46VnVsbkFwcHtCQTVlNjRfMTVfTm90X3NlQ1VSMy4uLn0=</p>
-<p>NTLM : F8F07F198A71F8F974EF0A23C25FFBBC</p>
-<p>MD5 : 41eb9128c6834194cfc7cf89893e6d92</p>
-<p>SHA1 : 0935ea842b85bf3fc4c1ee22e1ae7c1fbac53e8c </p>
+<p><b>Base64</b> : YWRtaW46VnVsbkFwcHtCQTVlNjRfMTVfTm90X3NlQ1VSMy4uLn0=</p>
+<p><b>NTLM</b> : F8F07F198A71F8F974EF0A23C25FFBBC</p>
+<p><b>MD5</b> : 41eb9128c6834194cfc7cf89893e6d92</p>
+<p><b>SHA1</b> : 0935ea842b85bf3fc4c1ee22e1ae7c1fbac53e8c </p>
 <!-- <p>SHA256 : 9258eb999b4cce51bb007f736ef268076ab4d628e3ffc16931365e790bfe29d1 </p>
 <p>SHA512 : a78c042fdcb1298c04006cac67a4cafcf969f5c6b44e3209ba19b09a34df616a0b0af27a67ae2b52b5a01e2ab4a02deb33f8d081258d0fd63adbe5caef4a29ca </p> -->
-<p> JWT avec un secret faible : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJKV1QtSVMtU0VDVVJFIiwibmFtZSI6IkpvaG4gRGlmZm9sIiwiaWF0IjoxNTE2MjM5MDIyLCJhcnRlZmFjdCI6IkluY2FsIiwiZW1haWwiOiJzZWNyZXQtZmJpQHlhaG9vLm1lIiwicGFzc3dvcmQiOiIyMzY1MDQ3NDA3YTYxNzUzZTQ2N2M5NzliZGYyMTllZmI5ZGQzYzljIn0.jIXUEj_vUqid6iaPOgVNgdu07yTOmg0iE8MeNcqnSlo </p>
+<p> <b>JWT avec un secret faible</b> : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWdWxuQXBwe2pXNy1pUy1zRWNVUjN9IiwibmFt<br>ZSI6IkpvaG4gRGlmZm9sIiwiaWF0IjoxNTE2MjM5MDIyLCJhcnRlZmFjdCI6IkluY2FsIiwiZW1haWwiOiJzZ<br>WNyZXQtZmJpQHlhaG9vLm1lIiwicGFzc3dvcmQiOiIyMzY1MDQ3NDA3YTYxNzUzZTQ2N2M5NzliZGYy<br>MTllZmI5ZGQzYzljIn0.ikMLn8EPR4_B49VReA032XX4PI7z_v9rjJaBMrZFbMs</p>
 <!-- https://github.com/wallarm/jwt-secrets.git Lien -->
 <a href="https://github.com/wallarm/jwt-secrets.git">Wordlist secret JWT</a>
     </br>

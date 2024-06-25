@@ -32,6 +32,7 @@
             <li>Fonctionnalité mot de passe oublié non sécurisée : La fonctionnalité de mot de passe oublié peut permettre l'énumération des utilisateurs et ne met pas en place de contrôles d'identification suffisamment robustes.</li>
             <li> <b> Exemple : </b>  <a href="bad_login.php">Récupération de mot de Passe</a></li>
         </ul>
+        <p> Ici nous avons parlé que des conception non sécurisées avec des exemples d'identification/authentification, ce qui est plus inclus dans le A07. Nous avons cependant d'autres conceptions non sécurisées qui sont possibles avec un conception de l'application qui permet d'obtenir des informations (Information Disclosure), des failles de contrôle d'accès, etc.. </p>
     </div>
     </div>
 </body>

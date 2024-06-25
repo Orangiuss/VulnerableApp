@@ -83,13 +83,14 @@ form label {
     color: #333;
 }
 
-form input[type="text"], form input[type="file"] {
+form input[type="text"], form input[type="file"], form input[type="password"] {
     width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 
 form button {
     padding: 10px 20px;
