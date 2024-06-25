@@ -9,11 +9,6 @@ services:
     depends_on:
       - db
 
-  vulnerable:
-    image: vulnerables/cve-2016-10033
-    ports:
-      - "8084:80"
-
   db:
     image: mysql:5.7
     restart: always
@@ -23,6 +18,11 @@ services:
     volumes:
       - db_data:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  nexus_server:
+   image: sonatype/nexus3:3.14.0
+   ports:
+    - "8081:8081"
 
 volumes:
   db_data:

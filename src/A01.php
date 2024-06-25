@@ -47,6 +47,8 @@
             <!-- L'URL directe est utilisée ici sans vérification d'autorisation -->
         </ul>
         <p>Cette page est vulnérable à une faille de contrôle d'accès (A01) car elle permet à tout utilisateur de voir les profils d'autres utilisateurs sans vérification d'authentification ou d'autorisation.</p>
+        <br>
+        <p> Essayez de retrouver le flag caché dans le profil de l'administrateur.</p>
     </div>
     </div>
 </body>

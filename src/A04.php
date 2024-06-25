@@ -30,7 +30,7 @@
             <li>Pas de redemande de mot de passe pour des actions sensibles : Ne pas redemander de mot de passe ou d'identification pour des actions comme un changement d'email ou de mot de passe.</li>
             <li>Pas de protection contre des attaques sur l'authentification : Pas de blocage après un nombre excessif de tentatives de connexion.</li>
             <li>Fonctionnalité mot de passe oublié non sécurisée : La fonctionnalité de mot de passe oublié peut permettre l'énumération des utilisateurs et ne met pas en place de contrôles d'identification suffisamment robustes.</li>
-            <li> <b> Exemple : </b>  <a href="bad_login.php">Récupération de Mot de Passe</a></li>
+            <li> <b> Exemple : </b>  <a href="bad_login.php">Récupération de mot de Passe</a></li>
         </ul>
     </div>
     </div>
