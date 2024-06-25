@@ -3,6 +3,8 @@
 # Set build type
 if [ "$1" == "rebuild" ]; then
   docker compose up -d --no-deps --build --remove-orphans
+elif [ "$1" == "down" ]; then
+  docker compose down
 else
   docker compose up -d
 fi

