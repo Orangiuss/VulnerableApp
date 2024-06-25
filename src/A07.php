@@ -39,7 +39,7 @@
                 <li>Réutilise l'identifiant de session après une connexion réussie.</li>
                 <li>N'invalide pas correctement les identifiants de session. Les sessions utilisateur ou les jetons d'authentification (principalement les jetons de connexion unique (SSO)) ne sont pas correctement invalidés lors de la déconnexion ou après une période d'inactivité.</li>
             </ul>
-
+            <p> Exemple : <a href="login.php">Page de connexion</a></p>
             <!-- <p>Source : <a href="https://portswigger.net/">PortsWigger</a></p> -->
         </div>
     </div>
