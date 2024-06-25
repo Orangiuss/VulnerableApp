@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-        🕵️‍♂️💻 VulnerableApp - Une application PHP pour montrer les dix premières vulnérabilités de l'OWASP 2021
+        🕵️‍♂️💻 VulnerableApp - PHP App pour le Top 10 OWASP 2021
     <br>
     <br>
 </h1>
