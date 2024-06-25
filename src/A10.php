@@ -10,6 +10,7 @@
         <h1>A10 - SSRF (Falsification de requête côté serveur)</h1>
     </header>
     <nav>
+        <a href="index.php">Accueil</a>
         <a href="A01.php">A01</a>
         <a href="A02.php">A02</a>
         <a href="A03.php">A03</a>

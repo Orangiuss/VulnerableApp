@@ -42,6 +42,12 @@ VulnerableApp est un outil pédagogique qui aide à identifier et comprendre les
     http://localhost:8042
     ```
 
+5. Pour rebuild :
+    
+    ```bash
+    ./setup.sh rebuild
+    ```
+
 ## Avertissement ⚠️
 
 Cet outil est destiné à des fins éducatives uniquement. L'utilisation abusive de cet outil sur des sites web sans autorisation préalable est illégale et peut entraîner des conséquences juridiques.
