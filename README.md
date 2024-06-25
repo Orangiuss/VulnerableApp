@@ -21,9 +21,9 @@ VulnerableApp est un outil pédagogique qui aide à identifier et comprendre les
 
 1. Clonez le dépôt :
 
-```bash
-git clone https://github.com/yourusername/VulnerableApp.git
-```
+    ```bash
+    git clone https://github.com/Orangiuss/VulnerableApp.git
+    ```
 
 2. Accédez au répertoire VulnerableApp :
     
