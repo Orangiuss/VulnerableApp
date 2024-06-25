@@ -12,3 +12,4 @@ INSERT INTO users (username, md5_password) VALUES ('admin', 'f30842d5150e4cbb9c1
 INSERT INTO users (username, md5_password) VALUES ('user', 'dbdf5542e5c2e73fa09d671db5208dd8');
 INSERT INTO users (username, md5_password) VALUES ('"', '00000000000000000000000000000000');
 INSERT INTO users (username, md5_password) VALUES ('Oh_No_My_Database', '4e7f25a06c7dde7efa0f5d7f8d1f11a9');
+INSERT INTO users (username, md5_password) VALUES ('Flag:', 'VulnApp{SQL1nJEcT!ON_1S_5C@rY}');

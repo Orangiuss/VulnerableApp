@@ -35,8 +35,6 @@
                 <li>Les tests d'intrusion et les scans effectués par des outils de test de sécurité des applications ne déclenchent pas d'alertes ou il n'y a pas d'outils.</li>
                 <li>L'application ne peut pas détecter ou alerter en cas d'attaques actives en temps réel.</li>
             </ul>
-
-            <p>Source : <a href="https://my.f5.com">My F5</a></p>
         </div>
     </div>
 </body>

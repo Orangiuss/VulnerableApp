@@ -1,54 +1,53 @@
 <h1 align="center">
     <br>
-        🕵️‍♂️💻 VulnerableApp - A PHP Application to show Top Ten OWASP 2021
+        🕵️‍♂️💻 VulnerableApp - Une application PHP pour montrer les dix premières vulnérabilités de l'OWASP 2021
     <br>
     <br>
 </h1>
 
-VulnerableApp is a simple PHP application designed to demonstrate the top ten security vulnerabilities according to OWASP 2021.
-
-![alt text](images/VulnerableApp.png)
+VulnerableApp est une application PHP simple conçue pour illustrer les dix principales vulnérabilités de sécurité selon l'OWASP 2021.
 
 ## Description 📝
 
-VulnerableApp is an educational tool that helps identify and understand common security vulnerabilities listed in the OWASP Top Ten 2021. It provides a practical environment for testing and learning how these vulnerabilities can be exploited and mitigated.
+VulnerableApp est un outil pédagogique qui aide à identifier et comprendre les vulnérabilités de sécurité courantes répertoriées dans le Top Ten OWASP 2021. Il offre un environnement pratique pour tester et apprendre comment ces vulnérabilités peuvent être exploitées et atténuées.
 
-## Features ⚙️
+## Fonctionnalités ⚙️
 
-- Demonstrates each of the OWASP Top Ten 2021 vulnerabilities
-- Easy to use with a simple interface
-- Provides examples of common security flaws and how they can be exploited
+- Démontre chacune des dix premières vulnérabilités de l'OWASP 2021
+- Facile à utiliser avec une interface simple
+- Fournit des exemples de défauts de sécurité courants et comment ils peuvent être exploités
 
-## Usage 🚀
+## Utilisation 🚀
 
-1. Clone the repository:
+1. Clonez le dépôt :
 
 ```bash
 git clone https://github.com/yourusername/VulnerableApp.git
 ```
 
-2. Navigate to the VulnerableApp directory:
-
-```bash
-cd VulnerableApp
-```
-
-3. Build and run the Docker container:
-
-```bash
-docker-compose up --build
-```
-
-4. Access the application in your browser:
+2. Accédez au répertoire VulnerableApp :
     
-```bash
-http://localhost:8080
-```
+    ```bash
+    cd VulnerableApp
+    ```
+3. Lancez le setup.sh pour lancer l'infrastructure :
 
-## Disclaimer ⚠️
+    ```bash
+    ./setup.sh
+    ```
 
-This tool is intended for educational purposes only. Misuse of this tool on websites without prior authorization is illegal and could lead to legal consequences.
+4. Accédez à l'application dans votre navigateur à l'adresse suivante :
 
-## Contributing 🤝
+    ```bash
+    http://localhost:8042
+    ```
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+## Avertissement ⚠️
+
+Cet outil est destiné à des fins éducatives uniquement. L'utilisation abusive de cet outil sur des sites web sans autorisation préalable est illégale et peut entraîner des conséquences juridiques.
+
+## Contribuer 🤝
+
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une demande.
+
+![Page exemple](img/vulnapp.png)

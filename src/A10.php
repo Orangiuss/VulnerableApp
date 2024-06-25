@@ -33,8 +33,6 @@
                 <li><strong>Exploitation de services :</strong> Utilisation des services internes pour lancer des attaques supplémentaires (par exemple, scanner des ports internes, exploitation de services vulnérables).</li>
                 <li><strong>Manipulation de la configuration :</strong> Les attaquants peuvent modifier des configurations ou des métadonnées, comme celles utilisées par des services de cloud.</li>
             </ul>
-            
-            <p>Source : <a href="https://portswigger.net/">PortSwigger</a></p>
         </div>
     </div>
 </body>

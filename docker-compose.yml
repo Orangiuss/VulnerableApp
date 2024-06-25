@@ -23,6 +23,8 @@ services:
    image: sonatype/nexus3:3.14.0
    ports:
     - "8081:8081"
+   volumes:
+      - ./solutions/A06/flag.txt:/etc/flag.txt:ro
 
 volumes:
   db_data:

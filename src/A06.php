@@ -39,8 +39,10 @@
             <p> Voir le centre de veille, d'alerte et de réponse aux attaques informatiques (CERT) : <a href="https://www.cert.ssi.gouv.fr/">CERT-FR</a></p> <br>
             <p>Il existe des outils automatiques utilisés par les attaquants pour trouver des systèmes mal configurés ou non mis à jour, comme le moteur de recherche IoT de Shodan pour détecter les objets vulnérables.</p>
             
-            <p>Exemple réel : <a href="bad_version.php">Page avec une version obsolète d'un composant</a></p>
+            <p>Exemple réel : <a href="http://localhost:8081">Nexus Repository Manager</a></p>
             
+            <p> Autre exemple, Confluence avec beaucoup de vulnérabilités : <a href="https://www.cvedetails.com/vulnerability-list/vendor_id-3578/product_id-106511/version_id-802742/Atlassian-Confluence-Server-6.10.2.html?page=1&order=3&trc=20&sha=441f90cfc2ecb7bd2aa3541aa11815272429337d"> CVE Details - Confluence Server 6.10.2</a></p>
+
             <h3>Ressources supplémentaires :</h3>
             <ul>
                 <li><a href="https://www.cvedetails.com/">CVE Details</a></li>
