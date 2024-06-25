@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A07:2021 - Identification et authentification de mauvaise qualité</title>
+    <title>A07 - Identification et authentification de mauvaise qualité</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>A07:2021 - Identification et authentification de mauvaise qualité</h1>
+        <h1>A07 - Identification et authentification de mauvaise qualité</h1>
     </header>
     <nav>
         <a href="index.php">Accueil</a>

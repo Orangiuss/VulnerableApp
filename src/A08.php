@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A08:2021 - Manque d'intégrité des données et du logiciel</title>
+    <title>A08 - Manque d'intégrité des données et du logiciel</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>A08:2021 - Manque d'intégrité des données et du logiciel</h1>
+        <h1>A08 - Manque d'intégrité des données et du logiciel</h1>
     </header>
     <nav>
         <a href="index.php">Accueil</a>

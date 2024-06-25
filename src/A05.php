@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A05:2021 - Mauvaise configuration de sécurité</title>
+    <title>A05 - Mauvaise configuration de sécurité</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>A05:2021 - Mauvaise configuration de sécurité</h1>
+        <h1>A05 - Mauvaise configuration de sécurité</h1>
     </header>
     <nav>
         <a href="index.php">Accueil</a>

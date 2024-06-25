@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A09:2021 - Carence des systèmes de contrôle et de journalisation</title>
+    <title>A09 - Carence des systèmes de contrôle et de journalisation</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>A09:2021 - Carence des systèmes de contrôle et de journalisation</h1>
+        <h1>A09 - Carence des systèmes de contrôle et de journalisation</h1>
     </header>
     <nav>
         <a href="index.php">Accueil</a>

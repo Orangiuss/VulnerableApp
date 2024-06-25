@@ -6,6 +6,8 @@ services:
     build: .
     ports:
       - "8042:80"
+    volumes:
+      - ./solutions/A05/flag.txt:/etc/flag_xxe.txt:ro
     depends_on:
       - db
 

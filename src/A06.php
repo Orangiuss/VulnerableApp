@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A06:2021 - Composants vulnérables et obsolètes</title>
+    <title>A06 - Composants vulnérables et obsolètes</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>A06:2021 - Composants vulnérables et obsolètes</h1>
+        <h1>A06 - Composants vulnérables et obsolètes</h1>
     </header>
     <nav>
         <a href="A01.php">A01</a>

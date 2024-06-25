@@ -37,6 +37,7 @@
                 <button type="submit">Soumettre</button>
             </form>
             <br>
+            <p> Le flag se trouve dans le fichier <b>/etc/flag_xxe.txt</b> </p>
             <p> Aide : <a href="https://github.com/payloadbox/xxe-injection-payload-list"> XXE Payloads</a></p>
             <?php
             if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['xmldata'])) {

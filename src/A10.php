@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>A10:2021 - SSRF (Falsification de requête côté serveur)</title>
+    <title>A10 - SSRF (Falsification de requête côté serveur)</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>A10:2021 - SSRF (Falsification de requête côté serveur)</h1>
+        <h1>A10 - SSRF (Falsification de requête côté serveur)</h1>
     </header>
     <nav>
         <a href="A01.php">A01</a>
