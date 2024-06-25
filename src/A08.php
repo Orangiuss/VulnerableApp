@@ -49,7 +49,7 @@
             <p>
                 La bonne façon d'insérer la bibliothèque dans votre code HTML serait d'utiliser SRI et d'inclure un hash d'intégrité afin que si un attaquant parvient à modifier la bibliothèque, tout client naviguant sur votre site web n'exécutera pas la version modifiée. Voici à quoi cela devrait ressembler en HTML :
             </p>
-            <pre><code>&lt;script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
+            <pre><code>&lt;script src="https://code.jquery.com/jquery-3.6.1.min.js" <br> integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
             <p>Vous pouvez aller sur <a href="https://www.srihash.org/">https://www.srihash.org/</a> pour générer des hash pour n'importe quelle bibliothèque si nécessaire.</p>
         
             <h3>Question :</h3>

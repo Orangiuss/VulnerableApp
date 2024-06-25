@@ -28,6 +28,28 @@ include 'db.php';
     <div class="center">
     <div class="container">
         <h2>Défaillances cryptographiques</h2>
+
+        <ul>
+         <!-- Ne pas utiliser de HTTPS 
+    Suites cryptographiques dépréciées ou fonction de hachage pour stocker les mots de passe dépréciées
+    Utilisation d'un secret/clé de chiffrement faible -->
+            <li> Ne pas utiliser de HTTPS</li>
+            <li> Suites cryptographiques dépréciées ou fonction de hachage pour stocker les mots de passe dépréciées</li>
+            <li> Utilisation d'un secret/clé de chiffrement faible</li>
+            <li> Utilisation de protocoles non sécurisées : <ul> 
+                <li> HTTP</li>
+                <li> FTP</li>
+                <li> Telnet</li>
+                <li> SMTP non chiffré par défaut</li>
+                <li> POP3 non chiffré par défaut</li>
+                <li> IMAP non chiffré par défaut</li>
+                <li> DNS non chiffré par défaut</li>
+            </ul></li>
+        </ul>
+
+        <br>
+        <br>
+
         <!-- Exemples de défaillances cryptographiques -->
         <?php
         function weakHash($password) {

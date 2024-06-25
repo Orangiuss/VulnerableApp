@@ -35,6 +35,26 @@
                 <li>Les tests d'intrusion et les scans effectués par des outils de test de sécurité des applications ne déclenchent pas d'alertes ou il n'y a pas d'outils.</li>
                 <li>L'application ne peut pas détecter ou alerter en cas d'attaques actives en temps réel.</li>
             </ul>
+
+            <h3>Question :</h3>
+            <p>Quelle est l'adresse IP d'un attaquant potentiel avec ce fichier de log : <a href="login-logs_159.txt">logs.txt</a> ?</p>
+            <form method="POST" action="">
+                <input type="text" name="hash" placeholder="Entrez l'adresse IP">
+                <input type="submit" value="Soumettre">
+            </form>
+
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $userHash = $_POST['hash'];
+                $correctHash = '49.99.13.16';
+                if ($userHash === $correctHash) {
+                    echo "<p>Félicitations ! Voici le flag : VulnApp{lOGS_arE_1ife}</p>";
+                } else {
+                    echo "<p>L'adresse IP est incorrecte. Veuillez réessayer.</p>";
+                }
+            }
+            ?>
+
         </div>
     </div>
 </body>

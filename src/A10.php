@@ -34,6 +34,28 @@
                 <li><strong>Exploitation de services :</strong> Utilisation des services internes pour lancer des attaques supplémentaires (par exemple, scanner des ports internes, exploitation de services vulnérables).</li>
                 <li><strong>Manipulation de la configuration :</strong> Les attaquants peuvent modifier des configurations ou des métadonnées, comme celles utilisées par des services de cloud.</li>
             </ul>
+            <p>
+                <b>Exemple :</b> Fournissez une URL et le serveur va récupérer le contenu de cette URL, essayer d'obtenir le flag suivant : <a href="flag_ssrf.txt">flag_ssrf.txt</a>
+            </p>
+            <form method="POST" action="">
+                <input type="text" name="url" placeholder="Entrez une URL">
+                <input type="submit" value="Récupérer le contenu">
+            </form>
+
+            <?php
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $url = $_POST['url'];
+
+                // Validation basique de l'URL
+                if (filter_var($url, FILTER_VALIDATE_URL)) {
+                    $response = file_get_contents($url);
+                    echo "<h3>Contenu de l'URL :</h3>";
+                    echo "<pre>" . htmlspecialchars($response) . "</pre>";
+                } else {
+                    echo "<p>URL invalide. Veuillez entrer une URL valide.</p>";
+                }
+            }
+            ?>
         </div>
     </div>
 </body>
