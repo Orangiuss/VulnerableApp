@@ -19,7 +19,7 @@ services:
       MYSQL_DATABASE: vulnerable_app
     volumes:
       - db_data:/var/lib/mysql
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./conf/init.sql:/docker-entrypoint-initdb.d/init.sql
 
   nexus_server:
    image: sonatype/nexus3:3.14.0

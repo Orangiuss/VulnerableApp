@@ -26,6 +26,19 @@
         <h2>Bienvenue dans l'application vulnérable OWASP Top 10</h2>
         <p>Cette application est intentionnellement vulnérable pour illustrer les dix principales vulnérabilités de sécurité selon l'OWASP.</p>
         <p>Utilisez les liens ci-dessus pour naviguer vers chaque catégorie de vulnérabilité.</p>
+    
+        <br>
+        <br>
+        <div class="center">
+        <img src="img/owasp.png" style="width: 400px;" alt="OWASP Top 10 - 2021">
+        </div>
+        <br>
+        <div class="center">
+        <p> Made with ❤️ by <a href="https://github.com/Orangiuss">Orangius</a></p>
+        </div>
+        <div class="center">
+        <img src="img/logo.png" style="width: 100px; height: 100px;" alt="Orangius Logo">
+        </div>
     </div>
     </div>
 </body>
