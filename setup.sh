@@ -12,4 +12,5 @@ fi
 # Prepare the exploit
 #!/bin/bash
 touch /tmp/pom.xml 
+sleep 5
 curl -v -u admin:admin123 --upload-file /tmp/pom.xml http://localhost:8081/repository/maven-releases/org/foo/1.0/foo-1.0.po > /dev/null 2>&1
