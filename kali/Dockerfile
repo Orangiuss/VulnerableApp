@@ -45,6 +45,9 @@ RUN go build
 RUN cp dalfox /usr/bin/
 RUN dalfox version
 
+# Install SQLTimeProbe
+RUN git clone https://github.com/Orangiuss/SQLTimeProbe.git
+
 WORKDIR /
 COPY CVE-2019-7238.py /CVE-2019-7238.py
 RUN git clone https://github.com/wallarm/jwt-secrets.git
