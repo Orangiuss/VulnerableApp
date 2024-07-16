@@ -21,6 +21,8 @@ elif [ "$1" == "-h" ]; then
   echo "    - exec   Get a shell in the Kali container"
   echo "    - build  Build the Kali image"
   echo "    - change Change the Kali Dockerfile"
+  echo "    - stop   Stop the Kali container"
+  echo "    - install-docker Install Docker on the machine (with apt) [Option not recommended]"
   echo "Options:"
   echo "  -r  Rebuild the Docker containers"
   echo "  -d  Stop and remove the Docker containers"
