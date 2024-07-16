@@ -55,5 +55,5 @@ elif [ "$1" == "install-docker" ]; then
     sudo usermod -aG docker $USER
     echo "Docker installed successfully."
 else
-    echo "Invalid argument. Please specify one of the following: start, exec, build, change, stop."
+    echo "Invalid argument. Please specify one of the following: start, exec, build (large image), change, stop."
 fi

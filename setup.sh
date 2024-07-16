@@ -19,7 +19,7 @@ elif [ "$1" == "-h" ]; then
   echo "  kali  Execute the Kali script"
   echo "    - start  Start the Kali container"
   echo "    - exec   Get a shell in the Kali container"
-  echo "    - build  Build the Kali image"
+  echo "    - build  Build the Kali image (large image)"
   echo "    - change Change the Kali Dockerfile"
   echo "    - stop   Stop the Kali container"
   echo "    - install-docker Install Docker on the machine (with apt) [Option not recommended]"
