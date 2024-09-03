@@ -4,7 +4,6 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- Déclaration de base du projet -->
     <groupId>com.example</groupId>
     <artifactId>webapp</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -22,7 +21,7 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Dépendance pour JUnit (optionnel pour les tests) -->
+        <!-- Dépendance pour JUnit (optionnelle pour les tests) -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -31,22 +30,33 @@
         </dependency>
     </dependencies>
 
-    <!-- Configuration du plugin Maven pour la construction du WAR -->
+    <!-- Configuration de la construction du WAR -->
     <build>
         <finalName>webapp</finalName>
         <plugins>
-            <!-- Plugin pour compiler les servlets -->
+            <!-- Plugin Maven pour construire le WAR -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>3.3.1</version>
+            </plugin>
+            <!-- Plugin Maven Compiler -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
-                    <archive>
-                        <manifestFile>${project.build.directory}/META-INF/MANIFEST.MF</manifestFile>
-                    </archive>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+    <!-- Spécifier la version de Java utilisée -->
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
 
 </project>

@@ -8,7 +8,7 @@ package java;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
-import java.SecretMessage;
+import com.example.SecretMessage;
 
 public class SerializeObject {
     public static void main(String[] args) {

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-@WebServlet("/UploadServlet")
+// @WebServlet("/uploadServlet")
 @MultipartConfig
 public class UploadServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;

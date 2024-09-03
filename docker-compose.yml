@@ -29,11 +29,9 @@ services:
       - ./solutions/A06/flag.txt:/etc/flag.txt:ro
 
   tomcat_server:
-    image: tomcat:8.0
+    build: tomcat
     ports:
       - "8080:8080"
-  volumes:
-    - ./conf:/etc/flag.txt:ro
-
+      
 volumes:
   db_data:
