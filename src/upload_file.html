@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload & Export</title>
+</head>
+<body>
+    <h1>Upload & Export</h1>
+    
+    <!-- Formulaire pour téléverser le fichier -->
+    <h2>Importer un fichier</h2>
+    <form action="UploadServlet" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".ser" required />
+        <input type="submit" value="Téléverser le fichier" />
+    </form>
+    
+    <!-- Formulaire pour exporter le fichier -->
+    <h2>Exporter un fichier</h2>
+    <form action="ExportServlet" method="post">
+        <input type="submit" value="Exporter le fichier" />
+    </form>
+</body>
+</html>
