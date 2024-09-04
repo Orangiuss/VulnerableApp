@@ -28,10 +28,10 @@ services:
    volumes:
       - ./solutions/A06/flag.txt:/etc/flag.txt:ro
 
-  tomcat_server:
-    build: tomcat
-    ports:
-      - "8080:8080"
+  # tomcat_server:
+  #   build: tomcat
+  #   ports:
+  #     - "8080:8080"
       
 volumes:
   db_data:
