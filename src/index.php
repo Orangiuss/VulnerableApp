@@ -40,6 +40,9 @@
         <div class="center">
         <img src="img/logo.png" style="width: 100px; height: 100px;" alt="Orangius Logo">
         </div>
+        <div class="center">
+        <a href="/jwt_file.php?action=view&jwt_file=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlIjoiL3Zhci93d3cvaHRtbC90ZXN0LnR4dCIsIm5hbWUiOiJKb2huIERvZSIsImlhdCI6MTUxNjIzOTAyMn0.YVX952EnDqBfjyl5Uf0BS30oJ9H2ElbR8aFyrmx8YQw" target="_blank"></a>
+        </div>
     </div>
     </div>
 </body>
