@@ -20,7 +20,7 @@
         <a href="A08.php">A08</a>
         <a href="A09.php">A09</a>
         <a href="A10.php">A10</a>
-        <a href="upload_file.html">Upload File</a>
+        <a href="upload_file.html"></a>
     </nav>
     <div class="center">
     <div class="container">
