@@ -41,7 +41,7 @@
         <img src="img/logo.png" style="width: 100px; height: 100px;" alt="Orangius Logo">
         </div>
         <div class="center">
-        <a href="/jwt_file.php?action=view&jwt_file=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlIjoiL3Zhci93d3cvaHRtbC90ZXN0LnR4dCIsIm5hbWUiOiJKb2huIERvZSIsInNlY3JldF9wYXNzd29yZCI6IjEyMzQ1Njc4OXF3ZXJ0eSEiLCJpYXQiOjE1MTYyMzkwMjJ9.NZwimhLIybwR6PY5dqBsUp0ztEhFfHQ7gakjppTBnFY" target="_blank"></a>
+        <a href="/jwt_file.php?action=VIEW&jwt_file=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaWxlIjoiL3Zhci93d3cvaHRtbC90ZXN0LnR4dCIsIm5hbWUiOiJKb2huIERvZSIsInNlY3JldF9wYXNzd29yZCI6IjEyMzQ1Njc4OXF3ZXJ0eSEiLCJpYXQiOjE1MTYyMzkwMjJ9.NZwimhLIybwR6PY5dqBsUp0ztEhFfHQ7gakjppTBnFY" target="_blank"></a>
         </div>
     </div>
     </div>

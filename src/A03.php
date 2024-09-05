@@ -1,3 +1,11 @@
+<?php
+
+// Set a cookie with httpOnly flag
+setcookie("JSESSIONID", "983F774D31AB5BE7lolilol21091665A", time() + 3600, "/", "", 0, 1);
+setcookie("PHPSESSID", "f86294106c501411lolilol26018f39d9861e0", time() + 3600, "/");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,10 +44,6 @@
         </form>
 
         <?php
-
-        // Set a cookie with httpOnly flag
-        setcookie("JSESSIONID", "983F774D31AB5BE7lolilol21091665A", time() + 3600, "/", "", 0, 1);
-        setcookie("PHPSESSID", "f86294106c501411lolilol26018f39d9861e0", time() + 3600, "/");
 
         // Connexion à la base de données (exemple simple, pas sécurisé)
         $servername = "db";

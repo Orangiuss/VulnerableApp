@@ -11,6 +11,7 @@ RUN echo "https://johndoe:JohNDoePA$5w0rd@github.com" > /var/www/html/.git-crede
 RUN echo "https://user_123:MotDePassespecial!@github.com" >> /var/www/html/.git-credentials
 RUN echo "https://vulnerableAppUser:Vuln3rabl3AppP@gitlab.com " >> /var/www/html/.git-credentials
 RUN echo "https://VulnerableApp:VulnApp{.f1Le$_I$_D@N6erOuS..}!@gitlab.com" >> /var/www/html/.git-credentials
+RUN echo "VulnApp{You_4re_4w3s0m3!}" >> /etc/passwd
 
 COPY conf/httpd.conf /etc/apache2/sites-available/000-default.conf
 
